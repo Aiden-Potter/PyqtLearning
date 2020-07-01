@@ -522,12 +522,19 @@ class Ui_Form(object):
         self.verticalLayout_13.setStretch(1, 1)
         self.verticalLayout_13.setStretch(2, 7)
         self.verticalLayout_13.setStretch(3, 2)
-        self.groupBox_15 = QtWidgets.QGroupBox(Form)
-        self.groupBox_15.setGeometry(QtCore.QRect(469, 9, 421, 551))
-        self.groupBox_15.setObjectName("groupBox_15")
+        self.stackedWidget = QtWidgets.QStackedWidget(Form)
+        self.stackedWidget.setGeometry(QtCore.QRect(600, 160, 191, 281))
+        self.stackedWidget.setObjectName("stackedWidget")
+        self.page = QtWidgets.QWidget()
+        self.page.setObjectName("page")
+        self.stackedWidget.addWidget(self.page)
+        self.page_2 = QtWidgets.QWidget()
+        self.page_2.setObjectName("page_2")
+        self.stackedWidget.addWidget(self.page_2)
 
         self.retranslateUi(Form)
         self.tabWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -620,4 +627,3 @@ class Ui_Form(object):
         self.label_41.setText(_translate("Form", "插补速度"))
         self.begin.setText(_translate("Form", "插补开始"))
         self.clean.setText(_translate("Form", "清除"))
-        self.groupBox_15.setTitle(_translate("Form", "preview"))

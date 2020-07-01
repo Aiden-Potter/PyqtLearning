@@ -924,18 +924,20 @@
     </item>
    </layout>
   </widget>
-  <widget class="QGroupBox" name="groupBox_15">
+  <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>469</x>
-     <y>9</y>
-     <width>421</width>
-     <height>551</height>
+     <x>600</x>
+     <y>160</y>
+     <width>191</width>
+     <height>281</height>
     </rect>
    </property>
-   <property name="title">
-    <string>preview</string>
+   <property name="currentIndex">
+    <number>0</number>
    </property>
+   <widget class="QWidget" name="page"/>
+   <widget class="QWidget" name="page_2"/>
   </widget>
  </widget>
  <resources/>
